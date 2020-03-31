@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính diện tích hình tròn</title>
+
+</head>
+<body>
+<label>Nhập bán kính </label>
+<input type="number" id="radius">
+<button onclick="caculate()">Tính diện tích</button>
+<script>
+    function caculate() {
+        let r;
+        r = document.getElementById("radius").value;
+        let s;
+        s = Math.PI * r * r;
+        document.write("Diện tích là:" + s)
+    }
+
+
+</script>
+</body>
+</html>
