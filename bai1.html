@@ -6,30 +6,35 @@
 </head>
 <body>
 <label>Vật Lý</label>
-<input id="physical"/><br><br>
+<input type="number" id="physical"/><br><br>
 <label>Hóa</label>
-<input id="chemistry"/><br><br>
+<input type="number" id="chemistry"/><br><br>
 <label>Sinh</label>
-<input id="biological"/><br><br>
+<input type="number" id="biological"/><br><br>
 
-<button onclick="convert(area)">Kết quả</button>
+<button onclick="convert()">Kết quả</button>
 
 
 <script>
-    let physical;
-    let chemistry;
-    let biological;
-    physical = document.getElementById("physicalpoint").value;
-    chemistry = document.getElementById("chemistrypoint").value;
-    biological = document.getElementById("biologicalpoint").value;
 
-    let physical1 = parseInt(physical);
-    let chemistry1 = parseInt(chemistry);
-    let biological1 = parseInt(biological);
+    function convert() {
+        let physical;
+        let chemistry;
+        let biological;
 
-    let area = physical1 + chemistry1 + biological1;
-    document.write("The area is: " + area);
-    console.log(physical);
+            physical = document.getElementById("physical").value;
+            chemistry = document.getElementById("chemistry").value;
+            biological = document.getElementById("biological").value;
+
+            let physical1 = parseInt(physical);
+            let chemistry1 = parseInt(chemistry);
+            let biological1 = parseInt(biological);
+
+            let sum = (physical1 + chemistry1 + biological1)/3;
+            document.write("The sum is: " + sum);
+            console.log("sum")
+
+    }
 </script>
 </body>
 </html>
