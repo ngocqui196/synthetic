@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<label>Vật Lý</label>
+<input id="physical"/><br><br>
+<label>Hóa</label>
+<input id="chemistry"/><br><br>
+<label>Sinh</label>
+<input id="biological"/><br><br>
+
+<button onclick="convert(area)">Kết quả</button>
+
+
+<script>
+    let physical;
+    let chemistry;
+    let biological;
+    physical = document.getElementById("physicalpoint").value;
+    chemistry = document.getElementById("chemistrypoint").value;
+    biological = document.getElementById("biologicalpoint").value;
+
+    let physical1 = parseInt(physical);
+    let chemistry1 = parseInt(chemistry);
+    let biological1 = parseInt(biological);
+
+    let area = physical1 + chemistry1 + biological1;
+    document.write("The area is: " + area);
+    console.log(physical);
+</script>
+</body>
+</html>
