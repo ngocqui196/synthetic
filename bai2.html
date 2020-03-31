@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Convert F to C</title>
+</head>
+<body>
+<Lable>độ C</Lable>
+<input type="number" id="celsius"><br><br>
+<button onclick="convert2()">Chuyển đổi</button>
+<script>
+    function convert2() {
+        let c;
+        c = document.getElementById('celsius').value;
+        let f;
+        f = (9*c/5) + 32;
+    document.write("Giá trị độ f là:" + f)
+    }
+</script>
+</body>
+</html>
